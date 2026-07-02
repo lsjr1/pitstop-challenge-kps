@@ -302,3 +302,5 @@ from sklearn.model_selection import cross_val_predict
 meta_oof_preds = cross_val_predict(BayesianRidge(), oof_stack, y, cv=sgkf, groups=groups)
 
 print(f"Stacked Meta-Model OOF ROC AUC: {roc_auc_score(y, meta_oof_preds):.5f}")
+
+# Stacked Meta-Model OOF ROC AUC: 0.92557
